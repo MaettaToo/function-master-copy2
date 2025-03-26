@@ -3,7 +3,12 @@
 //////////////////////////////////////////////////////////////////////
 
 function objectValues(object) {
-    // code
+    //I: function that takes an object as it's param
+    //O: returns an array of the input objects values
+    //C:none
+    //E: none
+    // return Object.values;
+    return Object.values(object);
 } 
 
 //////////////////////////////////////////////////////////////////////
