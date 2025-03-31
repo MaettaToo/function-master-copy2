@@ -229,14 +229,15 @@ function nonFriends(name, array) {
 //create container var for collected output
 var output = [];
 //create for loop to iterate over the array
-//for(var i = 0; i < array.length; i++){
+for(var i = 0; i < array.length; i++){
     // create conditional stmt to determine friends
-    if(array['friends'].includes(array['name'])){
-        console.log(array[i]['friends'] );
+    if(!array[i]['friends'].includes(name) && name !== array[i]['name']){
+        output.push(array[i]['name'] );
     //}
 }
 
 
+}return output;
 }
 
 //////////////////////////////////////////////////////////////////////
