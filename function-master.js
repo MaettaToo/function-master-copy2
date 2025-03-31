@@ -264,19 +264,40 @@ return object;
 //C:none
 //E: if array is empty
 function removeProperties(object, array) {
-    // create conditional stmt that compares object to array
-    if(array.includes(key) )
-    console.log(object);
-    console.log(array);
+    //create loop to iterate over object
+    for ( var key in object){
+ // create conditional stmt that compares object to array
+        if(array.includes(key)){
+            delete object[key];
+    }
+   
+   }
+  
 
 }
 
 //////////////////////////////////////////////////////////////////////
 // Function 16 - Dedup ///////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+//I: function takes an array 
+//O:return an array with all the duplicates removed
+//C:none
+//E:none
 function dedup(array) {
-
+    //create output array 
+    var output = [];
+    //create loop to iterate over array
+    for(var i = 0; i < array.length; i++ ){
+        // create condition to determine if items in the array are duplicates
+            if(!output.includes(array[i])) {
+              //push non duplicates to output array
+             output.push(array[i]);
+    }
+    
+}
+    // return array
+    return output;
+     
 }
 
 //////////////////////////////////////////////////////////////////////
